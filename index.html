@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Sign Up Form</title>
+	</head>
+	<body>
+		<div class="left-div">
+			<div class="title">ODIN</div>
+		</div>
+		<div class="right-div">
+			<div class="message">
+				<p>
+					This is not a real online service! You know you need something like this in your life to
+					help you realize your deepest dreams. Sign up <span class="italicized">now</span> to get
+					started.
+				</p>
+				<p>You <span class="italicized">know</span> you want to.</p>
+			</div>
+			<div class="form-div">
+				<p>Let's do this!</p>
+				<form action="#">
+					<div class="inputs">
+						<div class="input">
+							<label for="first-name">First Name</label>
+							<input type="text" id="first-name" />
+						</div>
+
+						<div class="input">
+							<label for="last-name">Last Name</label>
+							<input type="text" id="last-name" />
+						</div>
+
+						<div class="input">
+							<label for="email">Email</label>
+							<input type="email" id="email" />
+						</div>
+
+						<div class="input">
+							<label for="phone">Phone Number</label>
+							<input type="tel" id="phone" pattern="((\+|00)?[1-9]{2}|0)[1-9]( ?[0-9]){8}" />
+						</div>
+
+						<div class="input">
+							<label for="password">Password</label>
+							<input type="password" id="password" />
+						</div>
+
+						<div class="input">
+							<label for="confirm-password">Confirm Password</label>
+							<input type="password" id="confirm-password" />
+						</div>
+					</div>
+					<button type="submit">Create Account</button>
+				</form>
+			</div>
+			<div class="bottom-div">
+				<p>Already have an account? <a href="#" class="log-in">Log in</a></p>
+			</div>
+		</div>
+	</body>
+</html>
