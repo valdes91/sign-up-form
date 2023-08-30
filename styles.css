@@ -9,6 +9,54 @@
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	min-height: 100vh;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.left-div {
+	width: 40%;
+}
+
+.right-div {
+	width: 60%;
+}
+
+.right-div > div {
+	flex: 1;
+}
+
+.right-div .message {
+	justify-content: center;
+	gap: 1.5rem;
+}
+
+.inputs {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.inputs .input {
+	flex-basis: 50%;
+}
+
+.inputs label {
+	display: block;
+}
+
+.inputs input {
+	width: 75%;
+	min-width: 10rem;
 }
