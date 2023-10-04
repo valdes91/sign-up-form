@@ -4,13 +4,29 @@
 	box-sizing: border-box;
 }
 
+.padding-y1 {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-a {
-	text-decoration: none;
+a,
+a:hover,
+a:visited,
+a:active {
+	color: inherit;
+}
+
+.left-div .bottom {
+	color: #fff;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 0.5rem;
+	font-size: 0.8rem;
 }
 
 body {
@@ -28,10 +44,43 @@ body {
 
 .left-div {
 	width: 40%;
+	background-image: url('img/landscape_by_DiegoPH.jpg');
+	background-size: cover;
+}
+
+.left-div .top,
+.left-div .bottom {
+	flex: 1;
+}
+
+.left-div .top {
+	justify-content: center;
+	align-items: center;
+}
+
+.left-div .top span {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	text-align: center;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-family: 'Major Mono Display', monospace;
+}
+
+.left-div .top span i {
+	color: #fff;
+	font-size: 3.5rem;
+	margin-right: 0.75rem;
 }
 
 .right-div {
 	width: 60%;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
 .right-div > div {
@@ -41,6 +90,11 @@ body {
 .right-div .message {
 	justify-content: center;
 	gap: 1.5rem;
+}
+
+.right-div .message,
+.right-div .bottom-div {
+	background-color: #f9fafb;
 }
 
 .inputs {
