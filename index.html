@@ -7,8 +7,10 @@
 		<script src="https://kit.fontawesome.com/2cb771d227.js" crossorigin="anonymous"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap"
 			rel="stylesheet"
 		/>
 		<title>Sign Up Form</title>
@@ -37,9 +39,9 @@
 				</p>
 				<p>You <span class="italicized">know</span> you want to.</p>
 			</div>
-			<div class="form-div">
+			<div class="form-div flex col">
 				<p>Let's do this!</p>
-				<form action="#">
+				<form action="#" id="signup">
 					<div class="inputs">
 						<div class="input">
 							<label for="first-name">First Name</label>
@@ -71,10 +73,10 @@
 							<input type="password" id="confirm-password" />
 						</div>
 					</div>
-					<button type="submit">Create Account</button>
 				</form>
 			</div>
 			<div class="bottom-div">
+				<button type="submit" form="signup">Create Account</button>
 				<p>Already have an account? <a href="#" class="log-in">Log in</a></p>
 			</div>
 		</div>

@@ -1,3 +1,8 @@
+:root {
+	--btn-color: #333956;
+	--default-input: #e5e7eb;
+}
+
 *,
 *::before,
 *::after {
@@ -79,22 +84,51 @@ body {
 
 .right-div {
 	width: 60%;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .right-div > div {
 	flex: 1;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 .right-div .message {
-	justify-content: center;
+	justify-content: flex-end;
 	gap: 1.5rem;
+	padding-bottom: 1.25rem;
+	width: 100%;
 }
 
 .right-div .message,
 .right-div .bottom-div {
 	background-color: #f9fafb;
+}
+
+.form-div {
+	justify-content: center;
+	width: 75%;
+	flex-grow: 1.5;
+}
+
+.message p,
+.form-div p,
+.bottom-div p {
+	font-weight: 500;
+	font-size: 1.25rem;
+}
+
+.bottom-div button {
+	padding: 0.25rem;
+	margin: 1.25rem 0;
+}
+
+.bottom-div p {
+	font-size: 1rem;
+}
+
+.message p {
+	width: 75%;
 }
 
 .inputs {
@@ -104,6 +138,7 @@ body {
 
 .inputs .input {
 	flex-basis: 50%;
+	padding: 0.25rem 0;
 }
 
 .inputs label {
@@ -113,4 +148,7 @@ body {
 .inputs input {
 	width: 75%;
 	min-width: 10rem;
+	border: 1px solid var(--default-input);
+	border-radius: 5px;
+	padding: 0.2rem 1rem;
 }
