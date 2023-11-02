@@ -133,6 +133,7 @@ body {
 	color: white;
 	border: 1px solid var(--btn-color);
 	border-radius: 10px;
+	cursor: pointer;
 }
 
 .bottom-div p {
