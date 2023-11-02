@@ -45,32 +45,37 @@
 					<div class="inputs">
 						<div class="input">
 							<label for="first-name">First Name</label>
-							<input type="text" id="first-name" />
+							<input type="text" id="first-name" required />
 						</div>
 
 						<div class="input">
 							<label for="last-name">Last Name</label>
-							<input type="text" id="last-name" />
+							<input type="text" id="last-name" required />
 						</div>
 
 						<div class="input">
 							<label for="email">Email</label>
-							<input type="email" id="email" />
+							<input type="email" id="email" required />
 						</div>
 
 						<div class="input">
 							<label for="phone">Phone Number</label>
-							<input type="tel" id="phone" pattern="((\+|00)?[1-9]{2}|0)[1-9]( ?[0-9]){8}" />
+							<input
+								type="tel"
+								id="phone"
+								pattern="((\+|00)?[1-9]{2}|0)[1-9]( ?[0-9]){8}"
+								required
+							/>
 						</div>
 
 						<div class="input">
 							<label for="password">Password</label>
-							<input type="password" id="password" />
+							<input type="password" id="password" required />
 						</div>
 
 						<div class="input">
 							<label for="confirm-password">Confirm Password</label>
-							<input type="password" id="confirm-password" />
+							<input type="password" id="confirm-password" required />
 						</div>
 					</div>
 				</form>
